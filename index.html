@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body id='body'>
+  <canvas id="canvas" width="500px" height="500px"></canvas>
+  <div id="options">
+    <div id="note-header">
+      <h4>Note:</h4>
+      <p>If you leave the inputs blank it will choose a random size and color</p>
+    </div>
+    <div id="size-selection-area">
+      <label for="ball-size">
+        Ball Size:
+        <input type="range" min="5" max="60" value="20" id="ball-size">
+      </label>
+      <label for="random-size">
+        <input type="checkbox" name="random-size" id="random-size">
+        Random Size
+      </label>
+      <br>
+      <label for="random-size-min">
+        Random Size Min:
+        <input type="number" name="random-size-min" id="random-size-min" class="mini-number-input">
+      </label>
+      <label for="random-size-max">
+        Random Size Max:
+        <input type="number" name="random-size-max" id="random-size-max" class="mini-number-input">
+      </label>
+    </div>
+
+    <div id="color-selection-area">
+      <label for="ball-color">
+        Ball Color:
+        <input type="color" id="ball-color">
+      </label>
+      <label for="random-color">
+        <input type="checkbox" name="random-color" id="random-color">
+        Random Color
+      </label>
+    </div>
+
+    <label for="ball-count">
+      Ball Count:
+      <input type="range" min="1" max="300" value="1" id="ball-count">
+    </label>
+    <button id="add-ball-button">Add Balls</button>
+    <button id="clear-screen-button">Clear Screen</button>
+  </div>
+  <script src="index.js" type="module"></script>
+</body>
+
+<!-- 
+Possible Features:
+
+Better way to select a color maybe a color input exists?
+Make the ball size and count slider or better inputs?
+Maybe add Squares and rectangles?
+Add some options to adjust the size variant?
+Add some options to adjust the color variant?
+Add physics?
+Add collision?
+Add collision with other Balls?
+New Shapes?
+Options / Check boxes for new shapes?
+Mouse interactions?
+Options to adjust physics?
+
+-->
+
+</html>
