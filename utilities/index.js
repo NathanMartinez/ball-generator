@@ -13,7 +13,7 @@ const getRandomColor = () => {
   return `hsl(${getRandomNumber(0, 360)}, 100%, 50%)`
 }
 
-const getRandomPosition = (radius, ballsArray) => {
+const getRandomPosition = (radius) => {
   // I want to add an option that will ensure the new position will
   // not collide with any existing ball.
   let x = getRandomNumber(radius, 500 - radius)
